@@ -1,0 +1,105 @@
+nav {
+  width: 100%;
+  padding: auto;
+}
+.navbar {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.nav__left-block {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo__title {
+  margin-left: 5px;
+}
+.logo__title > p {
+  margin: 0;
+  padding: 0;
+}
+.logo__title p:nth-child(2) {
+  color: blue;
+}
+.nav__category {
+  display: flex;
+  align-items: center;
+}
+.search__block {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+.search__block > input {
+  width: 100%;
+  padding: 9px 8px 10px 16px;
+  border-radius: 12px;
+  border: 1px solid #505be9;
+  background: #fff;
+  outline: none;
+}
+.login__nav {
+  display: flex;
+  align-items: center;
+  width: 16%;
+  justify-content: space-between;
+}
+.nav__btn-login {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 5px 21px;
+  border-radius: 40px;
+}
+.nav__btn-login:active {
+  background-color: rgb(0, 0, 0, 0.2);
+}
+.nav__btn-free {
+  background-color: transparent;
+  color: #505be9;
+  border-radius: 40px;
+  border: 1px solid #505be9;
+  padding: 5px 21px;
+  cursor: pointer;
+}
+.nav__btn-free:active {
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+.categories {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.category {
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+
+.subcategories {
+  display: block;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+}
+
+.arrow {
+  position: absolute;
+}
+.subcategories > li {
+  border-bottom: 1px solid blue;
+}
+/* Поворачиваем стрелку при разворачивании подкатегорий */
+.open {
+  transform: rotate(180deg);
+}
